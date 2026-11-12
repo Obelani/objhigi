@@ -230,8 +230,16 @@
     .vant-grid{grid-template-columns:1fr}
     .plans{grid-template-columns:1fr}
     .guarantee{flex-direction:column;text-align:center}
-    .roi-col b{font-size:1.15rem}
+    .roi{padding:20px 16px}
+    .roi-grid{grid-template-columns:1fr;gap:6px}
+    .roi-col{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:10px;text-align:left;padding:14px 16px}
+    .roi-col span{grid-column:1}
+    .roi-col b{grid-column:2;text-align:right;font-size:1.15rem;line-height:1.2;white-space:nowrap}
+    .roi-col small{display:none}
+    .roi-x{margin:2px 0;font-size:.8rem;position:relative;display:flex;align-items:center;gap:10px}
+    .roi-x::before,.roi-x::after{content:"";flex:1;height:1px;background:rgba(245,185,66,.3)}
     .roi-row{flex-direction:column;align-items:flex-start;gap:2px}
+    .roi-row b{text-align:left}
   }
 
   /* ---------- reveal ---------- */
@@ -417,8 +425,8 @@
           <div class="roi-grid">
             <div class="roi-col roi-paid">
               <span>Você investe</span>
-              <b>no pacote de vídeos</b>
-              <small>uma única vez · menos que um lanche</small>
+              <b>R$ 19,90</b>
+              <small>uma vez só · menos que um lanche</small>
             </div>
             <div class="roi-x">vs.</div>
             <div class="roi-col roi-earn">
